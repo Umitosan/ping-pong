@@ -14,6 +14,8 @@ var masterFunk = function(startNum) {
   for (i=1 ; i <= startNum ; i++) {
     if ((i % 3) === 0) {
       masterArray.push("ping");
+    } else if ((i % 5) === 0) {
+      masterArray.push("pong");
     } else {
       masterArray.push(i);
     }
