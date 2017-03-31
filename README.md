@@ -27,11 +27,11 @@ Originally created 3/31/2017.
   * Example Input: 5
   * Example Output: 1,2,3,4,5
 
-3. The program will output the word "ping" instead of a number if the number in the output list is divisible by 3
+3. The program will output the word "ping" instead of a number if the number in the output list is divisible by
   * Example Input: 4
   * Example Output: 1,2,ping,4
 
-4. The program will output the word "pong" instead of a number if the number in the output list is divisible by 5
+4. The program will output the word "pong" instead of a number if the number in the output list is divisible by
   * Example Input: 6
   * Example Output: 1,2,ping,4,pong,ping
 
@@ -39,7 +39,13 @@ Originally created 3/31/2017.
   * Example Input: 16
   * Example Output: 1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong,16
 
-6. The program will clear its output are and start over if the user enters a new number and clicks the button to start
+6. Clicking the "Ping the Pong" button will generate the correct list and show in the output area below the buttons with each result under the last in a stack
+
+7. The program will clear its output and start over if the user enters a new number and clicks either of the first two main submit buttons
+
+8. Clicking the "reset" button will manually clear the created DOM list elements and hide the previous output
+
+9. clicking the "Pong the Ping" button will output the same list as "Ping the Pong" but in reverse order instead
 
 ## Known Bugs
 

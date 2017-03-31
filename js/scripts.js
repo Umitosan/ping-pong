@@ -24,21 +24,22 @@ var masterFunk = function(startNum) {
   return masterArray;
 };  // END masterFunk
 
-// this function clears all <li> elements from DOM
-var clearList = function() {
-  $("#out-list li").remove();
-};
-// this fucntion takes an array and outputs each element as a <li> on the page
-var updateArrayList = function(displayArray) {
-  displayArray.forEach(function(arrElement) {
-    $("#out-list").append( "<li>" + arrElement + "</li>" );
-  });
-};
-
 
 // FRONT-END user interface logic
 $(document).ready(function() {
   $("body").addClass("default-background");
+
+  // this function clears all <li> elements from DOM
+  var clearList = function() {
+    $("#out-list li").remove();
+  };
+
+  // this fucntion takes an array and outputs each element as a <li> on the page
+  var updateArrayList = function(displayArray) {
+    displayArray.forEach(function(arrElement) {
+      $("#out-list").append( "<li>" + arrElement + "</li>" );
+    });
+  };
 
   // simply reset the output area
   $("#reset-output").click(function(event) {

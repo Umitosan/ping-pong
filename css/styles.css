@@ -3,14 +3,6 @@
   background-color: rgba(0,80,80,0.2);
 }
 
-.green-background {
-  background-color: lightgreen;
-}
-
-.yellow-background {
-  background-color: lightyellow;
-}
-
 .jumbotron {
   text-align: center;
 }
@@ -66,12 +58,6 @@
   position:relative;
   left: -15px;
 }
-
-
-
-/*input {
-  margin-bottom: 15px;
-}*/
 
 .output-area {
   display: none;
