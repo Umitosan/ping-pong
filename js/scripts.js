@@ -24,29 +24,40 @@ var masterFunk = function(startNum) {
   return masterArray;
 };  // END masterFunk
 
+// this function clears all li elements from DOM
+var clearList = function() {
+  $("#out-list li").remove();
+};
+// this fucntion takes an array and outputs each element as a <li> on the page
+var showArrayList = function(displayArray) {
+  clearList();
+  displayArray.forEach(function(arrElement) {
+    $("#out-list").append( "<li>" + arrElement + "</li>" );
+  });
+};
+
 
 // FRONT-END user interface logic
 $(document).ready(function() {
-  $("#pongform").submit(function(event) {
-  event.preventDefault();
-  // get starting number from user field
-  var userInputNum = $("input#userInput").val();
 
-  // function to clear all old list items
-  var clearList = function() {
+  // simply reset the output area
+  $("#reset-output").click(function(event) {
     $("#out-list li").remove();
-  };
-
-  // this fucntion takes an array and outputs each element as a <li> on the page
-  var showArrayList = function(displayArray) {
-    clearList();
-    displayArray.forEach(function(arrElement) {
-      $("#out-list").append( "<li>" + arrElement + "</li>" );
-    });
-  };
-
-  showArrayList(masterFunk(userInputNum));
-
-  $(".output-area").show();
+    $(".output-area").hide();
   });
+
+  // output the list in regular order
+  $("#ping-main").click(function(event) {
+    var userInputNum = $("input#userInput").val();
+    showArrayList(masterFunk(userInputNum));
+    $(".output-area").show();
+  });
+
+  // output the list in reverse order
+  $("ping-reverse").click(function(event) {
+    var userInputNum = $("input#userInput").val();
+    showArrayList(masterFunk(userInputNum));
+    $(".output-area").show();
+  });
+
 });
