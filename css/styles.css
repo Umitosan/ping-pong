@@ -45,6 +45,12 @@
   margin-top: 15px;
 }
 
+#intro img {
+  display: none;
+  width: 250px;
+  float: right;
+}
+
 .col-xs-3 {
   padding: 0px;
 }

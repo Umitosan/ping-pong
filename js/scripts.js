@@ -1,4 +1,4 @@
-// BACK-END business logic
+// BACK-END "business logic"
 
 // the masterFunk function takes a number and outputs a string containing all correct
 //    numbers, pings, and pongs in the correct postions according to the specifications
@@ -25,7 +25,7 @@ var masterFunk = function(startNum) {
 };  // END masterFunk
 
 
-// FRONT-END user interface logic
+// FRONT-END "user interface logic"
 $(document).ready(function() {
   $("body").addClass("default-background");
 
@@ -45,6 +45,7 @@ $(document).ready(function() {
   $("#reset-output").click(function(event) {
     clearList();
     $(".output-area").hide();
+    $("#intro img").hide();
   });
 
   // output the list in regular order
@@ -53,6 +54,7 @@ $(document).ready(function() {
     clearList();
     updateArrayList(masterFunk(userInputNum));
     $(".output-area").show();
+    $("#intro img").show();
   });
 
   // output the list in reverse order
@@ -61,6 +63,7 @@ $(document).ready(function() {
     clearList();
     updateArrayList(masterFunk(userInputNum).reverse());
     $(".output-area").show();
+    $("#intro img").show();
   });
 
 });
