@@ -1,5 +1,25 @@
+
 .jumbotron {
   text-align: center;
+  /*background: transparent;*/
+}
+
+.row img {
+  width: 100%;
+}
+
+.col-xs-3 {
+  padding: 0px;
+}
+
+#leftImg {
+  position:relative;
+  right: -15px;
+}
+
+#rightImg {
+  position:relative;
+  left: -15px;
 }
 
 .output-area {

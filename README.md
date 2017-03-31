@@ -51,6 +51,10 @@ There are no bugs thus far, though the code is likely far from perfect.  Not all
 * Email: yeahdom@gmail.com
 * GitHub: https://github.com/Umitosan
 
+### Sources
+
+* Images pulled from: http://imgur.com/gallery/XPKHH
+
 ## Technologies Used
 
 * HTML
