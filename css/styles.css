@@ -1,7 +1,14 @@
 
-body {
+.green-background {
+  background-color: lightgreen;
+}
+
+.yellow-background {
+  background-color: lightyellow;
+}
+
+.default-background {
   background-color: rgba(0,80,80,0.2);
-  /*background: url("http://loc.lv/images/halls/85a14a7523356f294a7ae7a27367e087.jpg");*/
 }
 
 .jumbotron {
@@ -40,6 +47,7 @@ input {
 }
 
 li {
-  /* this option prevents html from ignoring whitespace in strings */
+  /* this option prevents html from ignoring whitespace in strings
+  ... such as the ones output from 'masterArray'*/
   white-space: pre;
 }

@@ -24,13 +24,12 @@ var masterFunk = function(startNum) {
   return masterArray;
 };  // END masterFunk
 
-// this function clears all li elements from DOM
+// this function clears all <li> elements from DOM
 var clearList = function() {
   $("#out-list li").remove();
 };
 // this fucntion takes an array and outputs each element as a <li> on the page
-var showArrayList = function(displayArray) {
-  clearList();
+var updateArrayList = function(displayArray) {
   displayArray.forEach(function(arrElement) {
     $("#out-list").append( "<li>" + arrElement + "</li>" );
   });
@@ -39,24 +38,31 @@ var showArrayList = function(displayArray) {
 
 // FRONT-END user interface logic
 $(document).ready(function() {
+  $("body").addClass("default-background");
 
   // simply reset the output area
   $("#reset-output").click(function(event) {
-    $("#out-list li").remove();
-    $(".output-area").hide();
+    clearList();
+    // $(".output-area").hide();
+    // $("body").removeClass();
+    // $("body").addClass("yellow-background").delay(1000);
+    // $("body").removeClass();
+    // $("body").addClass("default-background");
   });
 
   // output the list in regular order
   $("#ping-main").click(function(event) {
     var userInputNum = $("input#userInput").val();
-    showArrayList(masterFunk(userInputNum));
+    clearList();
+    updateArrayList(masterFunk(userInputNum));
     $(".output-area").show();
   });
 
   // output the list in reverse order
-  $("ping-reverse").click(function(event) {
+  $("#ping-reverse").click(function(event) {
     var userInputNum = $("input#userInput").val();
-    showArrayList(masterFunk(userInputNum));
+    clearList();
+    updateArrayList(masterFunk(userInputNum).reverse());
     $(".output-area").show();
   });
 
