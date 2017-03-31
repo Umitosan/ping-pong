@@ -1,10 +1,15 @@
 
+body {
+  background-color: rgba(0,80,80,0.2);
+  /*background: url("http://loc.lv/images/halls/85a14a7523356f294a7ae7a27367e087.jpg");*/
+}
+
 .jumbotron {
   text-align: center;
-  /*background: transparent;*/
 }
 
 .row img {
+  opacity: 1.0;
   width: 100%;
 }
 
@@ -22,10 +27,19 @@
   left: -15px;
 }
 
+input {
+  margin-bottom: 15px;
+}
+
 .output-area {
   display: none;
 }
 
 #out-list {
   list-style-type: none;
+}
+
+li {
+  /* this option prevents html from ignoring whitespace in strings */
+  white-space: pre;
 }

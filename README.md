@@ -41,7 +41,6 @@ Originally created 3/31/2017.
 
 6. The program will clear its output are and start over if the user enters a new number and clicks the button to start
 
-
 ## Known Bugs
 
 There are no bugs thus far, though the code is likely far from perfect.  Not all data-types may be handled correctly.

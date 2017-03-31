@@ -8,44 +8,44 @@
     <title>PingPong</title>
   </head>
   <body>
+    <div id="myBack">
+      <div class="container">
+          <div class="jumbotron">
+            <h1 > Ping  ____&#305;&deg;___ Pong  </h1>
+          </div>
 
-    <div class="container">
-        <div class="jumbotron">
-          <h1 > Ping  ____&#305;&deg;___ Pong  </h1>
-        </div>
-
-       <div class="row">
-          <div class="col-xs-3" id="leftImg">
-            <img src="img/champ1.jpg" alt="ping-pong champ" />
-          </div>
-          <div class="col-xs-3">
-            <img src="img/champ2.jpg" alt="ping-pong champ" />
-          </div>
-          <div class="col-xs-3">
-            <img src="img/champ3.jpg" alt="ping-pong champ" />
-          </div>
-          <div class="col-xs-3" id="rightImg">
-            <img src="img/champ4.jpg" alt="ping-pong champ" />
-          </div>
-       </div>
-       <br>
-
-       <form id="pongform">
-         <div class="form-group">
-           <input id="userInput" class="form-control" type="number" placeholder="Enter any whole number between 1 and 200">
+         <div class="row">
+            <div class="col-xs-3" id="leftImg">
+              <img src="img/champ1.jpg" alt="ping-pong champ" />
+            </div>
+            <div class="col-xs-3">
+              <img src="img/champ2.jpg" alt="ping-pong champ" />
+            </div>
+            <div class="col-xs-3">
+              <img src="img/champ3.jpg" alt="ping-pong champ" />
+            </div>
+            <div class="col-xs-3" id="rightImg">
+              <img src="img/champ4.jpg" alt="ping-pong champ" />
+            </div>
          </div>
-         <button type="submit" name="button" class="btn btn-success">Ping The Pong</button>
-      </form>
+         <br>
 
-      <!-- OUTPUT -->
-        <div class="output-area">
+         <form id="pongform">
+           <div class="form-group">
+             <input id="userInput" class="form-control" type="number" placeholder="Enter any whole number between 1 and 100">
+             <button type="submit" name="button" class="btn btn-success">Ping The Pong</button>
+             <!-- <button type="submit" name="button" class="btn btn-info">Pong The Ping (reverse order)</button> -->
+           </div>
+        </form>
 
-          <h3>User Starting Number: <span id="out1"></span></h3>
-          <h3>Count List: </h3>
-          <ul id="out-list">
-            <li>List: <span id="countOut"></span><li>
-          </ul>
-        </div>
+        <!-- OUTPUT -->
+          <div class="output-area">
+            <h3>Game results: </h3>
+            <ul id="out-list">
+              <li id="countOut"><li>
+            </ul>
+          </div>
+      </div>
     </div>
 
   </body>
