@@ -1,21 +1,27 @@
 // BACK-END business logic
 
-var basicCount = function(startNum) {
+// the masterFunk function takes a number and outputs a string containing all correct
+//    numbers, pings, and pongs in the correct postions according to the specifications
+var masterFunk = function(startNum) {
   let masterArray = [];
   let masterStr = "";
-
+  // inform the user if their number is too high or low
   if ((startNum < 1) || (startNum > 200))  {
     masterStr = "Hey crafty devil... try again using a number between 1 and 200.";
     return masterStr;
   }
-
+  // fill a new array will the correct numbers and words
   for (i=1 ; i <= startNum ; i++) {
-    masterArray.push(i)
+    if ((i % 3) === 0) {
+      masterArray.push("ping");
+    } else {
+      masterArray.push(i);
+    }
   };
-  
   masterStr = masterArray.toString();
   return masterStr;
-};
+};  // END masterFunk
+
 
 // var showArrayList = function(displayArray) {
 //   displayArray.forEach(function(arrIndex) {
@@ -34,6 +40,6 @@ $(document).ready(function() {
   var userInputNum = $("input#userInput").val();
   $(".output-area").show();
   $(".output-area span#out1").text(userInputNum);
-  $(".output-area #countOut").text(basicCount(userInputNum));
+  $(".output-area #countOut").text(masterFunk(userInputNum));
   });
 });
