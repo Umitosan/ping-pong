@@ -12,14 +12,13 @@ var masterFunk = function(startNum) {
     return masterStr;
   }
 
-  // fill a new array will the correct numbers and words
   for (i = 1 ; i <= startNum ; i++) {
-    if ( (i % 3 === 0) && (i % 15 !== 0) ) {
-      masterArray.push("ping");
-    } else if ( (i % 5 === 0) && (i % 15 !== 0) ) {
-      masterArray.push("pong");
-    } else if (i % 15 === 0) {
+    if (i % 15 === 0) {
       masterArray.push("ping-pong");
+    } else if (i % 3 === 0)  {
+      masterArray.push("ping");
+    } else if (i % 5 === 0) {
+      masterArray.push("pong");
     } else {
       masterArray.push(i);
     }
@@ -29,17 +28,12 @@ var masterFunk = function(startNum) {
   return masterStr;
 };  // END masterFunk
 
-
-
-
 // var showArrayList = function(displayArray) {
 //   displayArray.forEach(function(arrIndex) {
 //
 //     // $("#out-list li").last().append( "<li>test li</li>" );
 //   });
 // };
-
-
 
 // FRONT-END user interface logic
 $(document).ready(function() {
