@@ -1,4 +1,8 @@
 
+.default-background {
+  background-color: rgba(0,80,80,0.2);
+}
+
 .green-background {
   background-color: lightgreen;
 }
@@ -7,17 +11,46 @@
   background-color: lightyellow;
 }
 
-.default-background {
-  background-color: rgba(0,80,80,0.2);
-}
-
 .jumbotron {
   text-align: center;
 }
 
+#welcome p {
+  text-align: center;
+  text-indent: 20px;
+}
+
+#welcome span {
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#intro {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#intro ol{
+  margin-left: 30px;
+}
+
+#userInput {
+  margin-right: 20px;
+}
+
+.row {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .row img {
   opacity: 1.0;
-  width: 100%;
+  width: 90%;
+  border: 10px;
+  border-color: black;
+  border-radius: 10%;
+  margin-top: 15px;
 }
 
 .col-xs-3 {
@@ -34,16 +67,24 @@
   left: -15px;
 }
 
-input {
+
+
+/*input {
   margin-bottom: 15px;
-}
+}*/
 
 .output-area {
   display: none;
 }
 
+.form-group {
+  display: inline;
+}
+
+
 #out-list {
   list-style-type: none;
+  vertical-align: top;
 }
 
 li {

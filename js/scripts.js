@@ -43,11 +43,7 @@ $(document).ready(function() {
   // simply reset the output area
   $("#reset-output").click(function(event) {
     clearList();
-    // $(".output-area").hide();
-    // $("body").removeClass();
-    // $("body").addClass("yellow-background").delay(1000);
-    // $("body").removeClass();
-    // $("body").addClass("default-background");
+    $(".output-area").hide();
   });
 
   // output the list in regular order

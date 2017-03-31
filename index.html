@@ -13,6 +13,11 @@
           <h1> Ping  ____&#305;&deg;___ Pong  </h1>
         </div>
 
+        <div id="welcome">
+          <p><span>Welcome... </span>to my silly little page.</p>
+          <p>I'm very glad you could make it. </p>
+        </div>
+
         <!-- INTENSE IMAGES-->
         <div class="row">
           <div class="col-xs-3" id="leftImg">
@@ -30,13 +35,25 @@
         </div>
         <br>
 
-        <!-- BEAUTIFUL BUTTONS-->
-        <div class="button-bar">
-         <input id="userInput" class="form-control" type="number" placeholder="Enter any whole number between 1 and 100">
-         <button id="ping-main" type="button" class="btn btn-success">Ping The Pong</button>
-         <button id="ping-reverse"  type="button" class="btn btn-info">Pong The Ping (reverse order)</button>
-         <button id="reset-output" type="button" class="btn btn-warning">Reset manually</button>
-       </div>
+        <div id="intro">
+          <h3>Game Rules: </h3>
+          <ol>
+            <li>Numbers divisible by 3 become "ping"</li>
+            <li>Numbers divisible by 5 become "pong"</li>
+            <li>Numbers divisible by 15 become "ping-pong"</li>
+            <li>Only numbers 1-100 are allowed</li>
+          </ol>
+        </div>
+
+        <!-- BEAUTIFUL BUTTONS -->
+        <form class="form-inline" role="form">
+          <div class="form-group" >
+            <input id="userInput" class="form-control" type="number" placeholder="# 1-100">
+            <button id="ping-main" type="button" class="btn btn-success">Ping The Pong</button>
+            <button id="ping-reverse"  type="button" class="btn btn-info">Pong The Ping (reverse)</button>
+            <button id="reset-output" type="button" class="btn btn-warning">Reset</button>
+          </div>
+       </form>
 
         <!-- OUTPUT OPERATIONS -->
         <div class="output-area">
