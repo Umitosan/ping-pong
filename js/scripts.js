@@ -5,24 +5,31 @@
 var masterFunk = function(startNum) {
   let masterArray = [];
   let masterStr = "";
+
   // inform the user if their number is too high or low
   if ((startNum < 1) || (startNum > 200))  {
     masterStr = "Hey crafty devil... try again using a number between 1 and 200.";
     return masterStr;
   }
+
   // fill a new array will the correct numbers and words
-  for (i=1 ; i <= startNum ; i++) {
-    if ((i % 3) === 0) {
+  for (i = 1 ; i <= startNum ; i++) {
+    if ( (i % 3 === 0) && (i % 15 !== 0) ) {
       masterArray.push("ping");
-    } else if ((i % 5) === 0) {
+    } else if ( (i % 5 === 0) && (i % 15 !== 0) ) {
       masterArray.push("pong");
+    } else if (i % 15 === 0) {
+      masterArray.push("ping-pong");
     } else {
       masterArray.push(i);
     }
   };
+
   masterStr = masterArray.toString();
   return masterStr;
 };  // END masterFunk
+
+
 
 
 // var showArrayList = function(displayArray) {
