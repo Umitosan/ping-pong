@@ -10,20 +10,22 @@
   <body>
 
     <div class="container">
-       <h1 class="jumbotron"> Ping <- | -> Pong </h1>
+       <h1 class="jumbotron"> Ping  ____&#305;&deg;___ Pong  </h1>
 
        <form id="pongform">
          <div class="form-group">
-           <input id="userInput" class="form-control" type="number" placeholder="Enter a number">
+           <input id="userInput" class="form-control" type="number" placeholder="Enter any whole number between 1 and 200">
          </div>
          <button type="submit" name="button" class="btn btn-success">Ping The Pong</button>
       </form>
 
       <!-- OUTPUT -->
         <div class="output-area">
-          <br>
+
+          <h3>User Starting Number: <span id="out1"></span></h3>
+          <h3>Count List: </h3>
           <ul id="out-list">
-            <li><h3>Out 1 <span id="out1"></span></h3><li>
+            <li>List: <span id="countOut"></span><li>
           </ul>
         </div>
     </div>
